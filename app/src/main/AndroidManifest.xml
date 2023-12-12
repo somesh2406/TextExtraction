@@ -1,0 +1,61 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.somesh.textextraction">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TextExtraction"
+        tools:targetApi="31">
+
+        <!-- FileProvider -->
+        <provider
+            android:authorities="com.somesh.textextraction.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- Activities -->
+        <activity
+            android:name=".Activities.AadharCardActivity"
+            android:label="Aadhar Card Data Extract"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Activities.MainActivity" />
+
+        <activity
+            android:name=".Activities.PanCardActivity"
+            android:label="Pan Card Data Extract"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Activities.MainActivity" />
+
+        <activity
+            android:name=".Activities.VoterCardActivity"
+            android:label="Voter Card Data Extract"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Activities.MainActivity" />
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".Activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "940149473028",
+    "project_id": "textexrtraction",
+    "storage_bucket": "textexrtraction.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940149473028:android:44ba5b6ea021aafe5e5a51",
+        "android_client_info": {
+          "package_name": "com.somesh.textextraction"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5RVHDOR4Hd5OQBOsxE6wMEt6oUgacDUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

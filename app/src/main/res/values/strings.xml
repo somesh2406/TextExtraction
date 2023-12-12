@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Text Extraction</string>
+    <string name="main_text">Text Extraction Tool for Gov. Identity cards</string>
+    <string name="aadhar_card">AADHAR CARD</string>
+    <string name="pan_card">PAN CARD</string>
+    <string name="voter_card">VOTER CARD</string>
+</resources>
